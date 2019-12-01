@@ -1,0 +1,16 @@
+﻿生成启动时间为 2019/12/1 14:20:49。
+     1>项目“E:\c 12-1\三子棋\三子棋\三子棋.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         D:\vs2013\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt 1.c
+         1.c
+     1>e:\c 12-1\三子棋\三子棋\1.c(113): warning C4047: “==”:“int (__cdecl *)(char (*)[3])”与“int”的间接级别不同
+     1>e:\c 12-1\三子棋\三子棋\1.c(124): warning C4013: “display_board”未定义；假设外部返回 int
+       Link:
+         D:\vs2013\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\c 12-1\三子棋\Debug\三子棋.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\c 12-1\三子棋\Debug\三子棋.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\c 12-1\三子棋\Debug\三子棋.lib" /MACHINE:X86 Debug\1.obj
+     1>1.obj : error LNK2019: 无法解析的外部符号 _display_board，该符号在函数 _game 中被引用
+     1>E:\c 12-1\三子棋\Debug\三子棋.exe : fatal error LNK1120: 1 个无法解析的外部命令
+     1>已完成生成项目“E:\c 12-1\三子棋\三子棋\三子棋.vcxproj”(Build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:00.63
