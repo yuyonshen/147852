@@ -1,0 +1,10 @@
+﻿生成启动时间为 2019/12/12 18:43:18。
+     1>项目“E:\c 12-12-1\42\42\42.vcxproj”在节点 2 上(Build 个目标)。
+     1>Link:
+         D:\vs2013\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\c 12-12-1\42\Debug\42.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\c 12-12-1\42\Debug\42.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\c 12-12-1\42\Debug\42.lib" /MACHINE:X86 Debug\42.obj
+         42.vcxproj -> E:\c 12-12-1\42\Debug\42.exe
+     1>已完成生成项目“E:\c 12-12-1\42\42\42.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:00.27
