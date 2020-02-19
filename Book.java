@@ -1,13 +1,21 @@
-public class Book {
-    private int add(int shelf,int box){
-        box=box+shelf;
-        return box;
+public class Book<T> {
+    private T bookInfo;
+    public Book(T bookInfo){
+        this.bookInfo=bookInfo;
+    }
+    public T getBookInfo(){
+        return bookInfo;
     }
 
     public static void main(String[] args) {
-        Book book=new Book();
-        int shelf=30;
-        int box=40;
-        System.out.println("把书架上的书全部放在箱子后，箱子里书的总和："+book.add(shelf,box));
+        Book<String> bookName=new Book<String>("《零基础学java》");
+        Book<String> bookAuthor=new Book<String>("明日科技");
+        Book<Double> bookPrice=new Book<Double>(69.8);
+        Book<Boolean> hasCD=new Book<Boolean>(true);
+        System.out.println("书名："+bookName.getBookInfo());
+        System.out.println("作者："+bookAuthor.getBookInfo());
+        System.out.println("价格："+bookPrice.getBookInfo());
+        System.out.println("是否赠送光盘："+hasCD.getBookInfo());
+
     }
 }
