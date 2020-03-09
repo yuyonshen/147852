@@ -1,18 +1,20 @@
-package book;
+package Book;
 
 public class Book {
+    //创建书的属性
     private String name;
-    private String author;
-    private int price;
-    private String type;
-    private boolean isBorrowed;
+    private String zuozhe;
+    private int jiage;
+    private String leiixng;
+    private boolean zaibuzai;
 
-    public Book(String name, String author, int price, String type, boolean isBorrowed) {
+
+    public Book(String name, String zuozhe, int jiage, String leiixng, boolean zaibuzai) {
         this.name = name;
-        this.author = author;
-        this.price = price;
-        this.type = type;
-        this.isBorrowed=isBorrowed();
+        this.zuozhe = zuozhe;
+        this.jiage = jiage;
+        this.leiixng = leiixng;
+        this.zaibuzai = zaibuzai;
     }
 
     public String getName() {
@@ -23,46 +25,46 @@ public class Book {
         this.name = name;
     }
 
-    public String getAuthor() {
-        return author;
+    public String getZuozhe() {
+        return zuozhe;
     }
 
-    public void setAuthor(String author) {
-        this.author = author;
+    public void setZuozhe(String zuozhe) {
+        this.zuozhe = zuozhe;
     }
 
-    public int getPrice() {
-        return price;
+    public int getJiage() {
+        return jiage;
     }
 
-    public void setPrice(int price) {
-        this.price = price;
+    public void setJiage(int jiage) {
+        this.jiage = jiage;
     }
 
-    public String getType() {
-        return type;
+    public String getLeiixng() {
+        return leiixng;
     }
 
-    public void setType(String type) {
-        this.type = type;
+    public void setLeiixng(String leiixng) {
+        this.leiixng = leiixng;
     }
 
-    public boolean isBorrowed() {
-        return isBorrowed;
+    public boolean isZaibuzai() {
+        return zaibuzai;
     }
 
-    public void setBorrowed(boolean borrowed) {
-        isBorrowed = borrowed;
+    public void setZaibuzai(boolean zaibuzai) {
+        this.zaibuzai = zaibuzai;
     }
 
     @Override
     public String toString() {
         return "Book{" +
                 "name='" + name + '\'' +
-                ", author='" + author + '\'' +
-                ", price=" + price +
-                ", type='" + type + '\'' +
-                ", isBorrowed=" + isBorrowed +
+                ", zuozhe='" + zuozhe + '\'' +
+                ", jiage=" + jiage +
+                ", leiixng='" + leiixng + '\'' +
+                ", zaibuzai=" + zaibuzai +
                 '}';
     }
 }
