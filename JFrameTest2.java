@@ -1,24 +1,21 @@
-import jdk.internal.org.objectweb.asm.tree.MultiANewArrayInsnNode;
-
 import javax.swing.*;
 import java.awt.*;
 
 public class JFrameTest2 extends JFrame {
-   public void CreateJFrane(String title){
-        //先创建窗体对象
+   public void CreateJFrrame(String title){
        JFrame jf=new JFrame(title);
-       //获取一个容器
        Container container=jf.getContentPane();
-       //创建一个标签
-       JLabel jl=new JLabel("这是一个JFrame窗体");
+       JLabel jl=new JLabel("这是一个窗体");
+       jl.setHorizontalAlignment(SwingConstants.CENTER);
        container.add(jl);
-       container.setBackground(Color.black);
+       container.setBackground(Color.yellow);
        jf.setVisible(true);
-       jf.setBounds(123,234,200,150);
+       jf.setSize(1000,500);
        jf.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-    }
+
+   }
 
     public static void main(String[] args) {
-        new JFrameTest2().CreateJFrane("创建一个JF窗体");
+        new JFrameTest2().CreateJFrrame("创建一个窗体");
     }
 }
