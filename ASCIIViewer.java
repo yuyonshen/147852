@@ -1,17 +1,8 @@
-
-import java.awt.BorderLayout;
-import java.awt.Font;
-import java.awt.GridLayout;
+import javax.swing.*;
+import javax.swing.border.EtchedBorder;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JOptionPane;
-import javax.swing.JPanel;
-import javax.swing.JTextField;
-import javax.swing.border.EtchedBorder;
 
 public class ASCIIViewer extends JFrame {
 
@@ -53,21 +44,21 @@ public class ASCIIViewer extends JFrame {
         panel.add(asciiPanel);
         asciiPanel.setLayout(new GridLayout(1, 5, 5, 5));
 
-        JLabel label1 = new JLabel("�����ַ���");
-        label1.setFont(new Font("字符", Font.PLAIN, 16));
+        JLabel label1 = new JLabel("输入字符");
+        label1.setFont(new Font("宋体", Font.PLAIN, 16));
         asciiPanel.add(label1);
 
         asciiTextField = new JTextField();
-        asciiTextField.setFont(new Font("΢���ź�", Font.PLAIN, 16));
+        asciiTextField.setFont(new Font("转换结果", Font.PLAIN, 16));
         asciiPanel.add(asciiTextField);
         asciiTextField.setColumns(3);
 
-        JLabel label2 = new JLabel("ת�������");
-        label2.setFont(new Font("΢���ź�", Font.PLAIN, 16));
+        JLabel label2 = new JLabel("转换结果");
+        label2.setFont(new Font("宋体", Font.PLAIN, 16));
         asciiPanel.add(label2);
 
         label3 = new JLabel("");
-        label3.setFont(new Font("΢���ź�", Font.PLAIN, 16));
+        label3.setFont(new Font("宋体", Font.PLAIN, 16));
         asciiPanel.add(label3);
 
         JButton toNumberButton = new JButton("转换");
@@ -84,8 +75,8 @@ public class ASCIIViewer extends JFrame {
         panel.add(numberPanel);
         numberPanel.setLayout(new GridLayout(1, 5, 5, 5));
 
-        JLabel label4 = new JLabel("�������֣�");
-        label4.setFont(new Font("΢���ź�", Font.PLAIN, 16));
+        JLabel label4 = new JLabel("输入数字");
+        label4.setFont(new Font("宋体", Font.PLAIN, 16));
         numberPanel.add(label4);
 
         numberTextField = new JTextField();
@@ -93,7 +84,7 @@ public class ASCIIViewer extends JFrame {
         numberPanel.add(numberTextField);
         numberTextField.setColumns(3);
 
-        JLabel label5 = new JLabel("ת�������");
+        JLabel label5 = new JLabel("转换结果");
         label5.setFont(new Font("΢���ź�", Font.PLAIN, 16));
         numberPanel.add(label5);
 
