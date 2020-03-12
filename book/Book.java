@@ -1,19 +1,17 @@
-package Book;
+package book;
 
 public class Book {
-    //创建书的属性
     private String name;
     private String zuozhe;
     private int jiage;
-    private String leiixng;
+    private String neixing;
     private boolean zaibuzai;
 
-
-    public Book(String name, String zuozhe, int jiage, String leiixng, boolean zaibuzai) {
+    public Book(String name, String zuozhe, int jiage, String neixing, boolean zaibuzai) {
         this.name = name;
         this.zuozhe = zuozhe;
         this.jiage = jiage;
-        this.leiixng = leiixng;
+        this.neixing = neixing;
         this.zaibuzai = zaibuzai;
     }
 
@@ -41,12 +39,12 @@ public class Book {
         this.jiage = jiage;
     }
 
-    public String getLeiixng() {
-        return leiixng;
+    public String getNeixing() {
+        return neixing;
     }
 
-    public void setLeiixng(String leiixng) {
-        this.leiixng = leiixng;
+    public void setNeixing(String neixing) {
+        this.neixing = neixing;
     }
 
     public boolean isZaibuzai() {
@@ -63,7 +61,7 @@ public class Book {
                 "name='" + name + '\'' +
                 ", zuozhe='" + zuozhe + '\'' +
                 ", jiage=" + jiage +
-                ", leiixng='" + leiixng + '\'' +
+                ", neixing='" + neixing + '\'' +
                 ", zaibuzai=" + zaibuzai +
                 '}';
     }

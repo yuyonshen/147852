@@ -1,12 +1,11 @@
 package Dongzuo;
 
-import Book.BookList;
+import book.BookList;
 
-public class tuichu implements Dongzuo {
+public class tuichu implements  Dongzuos {
     @Override
     public void work(BookList bookList) {
-        System.out.println("Goodbye");
+        System.out.println("GoodBye");
         System.exit(0);
-
     }
 }

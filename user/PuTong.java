@@ -1,35 +1,36 @@
 package User;
 
-import Book.BookList;
 import Dongzuo.*;
+import book.BookList;
 
 import java.util.Scanner;
 
-public class PuTong {
-    private String name;
-    private  Dongzuo[] dongzuo=new Dongzuo[]{
-            new chaxun(),
-            new jieshu(),
-            new huanshu(),
-            new tuichu()
-    };
+public class PuTong extends User {
     public PuTong(String name){
         this.name=name;
-    }
+        dongzuo=new Dongzuos[]{
+                new chaxun(),
+                new jieshu(),
+                new huanshu(),
+                new tuichu()
+        };
 
-    public int menu(){
-        System.out.println("======================");
-        System.out.println("欢迎"+this.name+"请入图书馆系统");
+    }
+    @Override
+    public int menu() {
+        System.out.println("===========================");
+        System.out.println(this.name+"欢迎进入图书馆系统");
         System.out.println("0.查询书籍");
         System.out.println("1.借书");
         System.out.println("2.还书");
         System.out.println("3.退出");
-        Scanner scanner=new Scanner(System.in);
-        System.out.println("亲输入你的选项");
+        System.out.println("请输入你的选项");
+        Scanner scanner =new Scanner(System.in);
         int choice=scanner.nextInt();
+        System.out.println("=============================");
         return choice;
     }
-    public void doDongzuo(int choice, BookList bookList){
+    public void Dodongzuo(int choice, BookList bookList){
         dongzuo[choice].work(bookList);
     }
 }
